@@ -30,7 +30,8 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "@nuxtjs/i18n",
     "nuxt-headlessui",
-    '@nuxtjs/algolia'
+    "@nuxtjs/algolia",
+    "@pinia/nuxt",
   ],
 
   colorMode: {
