@@ -118,25 +118,29 @@ const tab = ref("login")
             <!-- Email -->
             <div class="mb-3">
               <label class="inline-block mb-2">Email</label>
-              <input
+              <VeeField
                 type="email"
+                name="email"
                 class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300 transition duration-500 focus:outline-none focus:border-black rounded"
                 placeholder="Enter Email"
               />
+              <VeeErrorMessage class="text-red-600" name="email" />
             </div>
             <!-- Age -->
             <div class="mb-3">
               <label class="inline-block mb-2">Age</label>
-              <input
+              <VeeField
                 type="number"
+                name="number"
                 class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300 transition duration-500 focus:outline-none focus:border-black rounded"
               />
             </div>
             <!-- Password -->
             <div class="mb-3">
               <label class="inline-block mb-2">Password</label>
-              <input
+              <VeeField
                 type="password"
+                name="password"
                 class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300 transition duration-500 focus:outline-none focus:border-black rounded"
                 placeholder="Password"
               />
@@ -144,8 +148,9 @@ const tab = ref("login")
             <!-- Confirm Password -->
             <div class="mb-3">
               <label class="inline-block mb-2">Confirm Password</label>
-              <input
+              <VeeField
                 type="password"
+                name="password"
                 class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300 transition duration-500 focus:outline-none focus:border-black rounded"
                 placeholder="Confirm Password"
               />
@@ -163,8 +168,9 @@ const tab = ref("login")
             </div>
             <!-- TOS -->
             <div class="mb-3 pl-6">
-              <input
+              <VeeField
                 type="checkbox"
+                name="checkbox"
                 class="w-4 h-4 float-left -ml-6 mt-1 rounded"
               />
               <label class="inline-block">Accept terms of service</label>
