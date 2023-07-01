@@ -131,9 +131,10 @@ const tab = ref("login")
               <label class="inline-block mb-2">Age</label>
               <VeeField
                 type="number"
-                name="number"
+                name="age"
                 class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300 transition duration-500 focus:outline-none focus:border-black rounded"
               />
+              <VeeErrorMessage class="text-red-600" name="age" />
             </div>
             <!-- Password -->
             <div class="mb-3">
@@ -150,7 +151,7 @@ const tab = ref("login")
               <label class="inline-block mb-2">Confirm Password</label>
               <VeeField
                 type="password"
-                name="password"
+                name="confirm_password"
                 class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300 transition duration-500 focus:outline-none focus:border-black rounded"
                 placeholder="Confirm Password"
               />
