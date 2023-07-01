@@ -5,6 +5,10 @@ import { registrationFormSchema as schema } from "~/config/validation.schema"
 const modalStore = useModalStore()
 
 const tab = ref("login")
+
+const handleRegistration = (value: object) => {
+  console.log(value)
+}
 </script>
 
 <template>
@@ -98,7 +102,11 @@ const tab = ref("login")
             </button>
           </form>
           <!-- Registration Form -->
-          <VeeForm v-else :validation-schema="schema">
+          <VeeForm
+            v-else
+            :validation-schema="schema"
+            @submit="handleRegistration"
+          >
             <pre>
               {{ schema }}
             </pre>
@@ -179,7 +187,7 @@ const tab = ref("login")
                 name="tos"
                 class="w-4 h-4 float-left -ml-6 mt-1 rounded"
               />
-              <label class="inline-block">Accept terms of service</label>
+              <label class="block">Accept terms of service</label>
               <VeeErrorMessage class="text-red-600" name="tos" />
             </div>
             <button
