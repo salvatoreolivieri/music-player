@@ -1,4 +1,4 @@
-import "~/config/validation"
+import "./validation"
 
 export const registrationFormSchema = {
   name: "required|min:3|max:100|alpha_spaces",

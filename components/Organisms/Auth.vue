@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useModalStore } from "~/store/modal"
-import { registrationFormSchema as schema } from "./Auth.schema"
+import { registrationFormSchema as schema } from "~/config/validation.schema"
 
 const modalStore = useModalStore()
 
