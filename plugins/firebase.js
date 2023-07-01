@@ -9,4 +9,6 @@ const firebaseConfig = {
   appId: "1:1076213217917:web:208383ad0c55979bbdcf14",
 }
 
-// export default firebase.initializeApp(firebaseConfig)
+export default defineNuxtPlugin(() => {
+  // firebase.initializeApp(firebaseConfig)
+})
