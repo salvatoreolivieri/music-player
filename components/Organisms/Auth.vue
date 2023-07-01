@@ -176,10 +176,11 @@ const tab = ref("login")
             <div class="mb-3 pl-6">
               <VeeField
                 type="checkbox"
-                name="checkbox"
+                name="tos"
                 class="w-4 h-4 float-left -ml-6 mt-1 rounded"
               />
               <label class="inline-block">Accept terms of service</label>
+              <VeeErrorMessage class="text-red-600" name="tos" />
             </div>
             <button
               type="submit"

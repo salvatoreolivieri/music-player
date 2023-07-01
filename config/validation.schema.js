@@ -6,6 +6,6 @@ export const registrationFormSchema = {
   age: "required|min_value:18|max_value:100",
   password: "required|min:3|max:100",
   confirm_password: "confirmed:@password",
-  country: "",
-  tos: "",
+  country: "required",
+  tos: "required",
 }
