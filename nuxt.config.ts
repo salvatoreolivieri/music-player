@@ -4,7 +4,7 @@ import itLocale from "./locales/it.json"
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "Nuxt Blueprint",
+      title: "Nuxt Music Player",
       htmlAttrs: {
         lang: "en",
       },
@@ -14,7 +14,7 @@ export default defineNuxtConfig({
         {
           hid: "description",
           name: "description",
-          content: "This is my first Nuxt App",
+          content: "This is a Nuxt Music Player Web App",
         },
         { name: "format-detection", content: "telephone=no" },
       ],
