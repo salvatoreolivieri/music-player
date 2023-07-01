@@ -20,6 +20,7 @@ defineRule("max_value", maxValue)
 defineRule("confirmed", confirmed)
 
 configure({
+  // Custom Error Messages
   generateMessage: (context) => {
     const messages = {
       required: `The field ${context.field} is required idiot`,
@@ -31,4 +32,10 @@ configure({
 
     return message
   },
+
+  // Events:
+  validateOnBlur: true, // controls if `blur` events should trigger validation with `handleChange` handler
+  validateOnChange: true, // controls if `change` events should trigger validation with `handleChange` handler
+  validateOnInput: false, // controls if `input` events should trigger validation with `handleChange` handler
+  validateOnModelUpdate: true, // con
 })

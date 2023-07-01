@@ -1,5 +1,10 @@
 import "./validation"
 
+export const loginFormSchema = {
+  email: "required|min:3|max:100|email",
+  password: "required|min:3|max:100",
+}
+
 export const registrationFormSchema = {
   name: "required|min:3|max:100|alpha_spaces",
   email: "required|min:3|max:100|email",
