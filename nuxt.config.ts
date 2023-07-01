@@ -1,4 +1,5 @@
 import itLocale from "./locales/it.json"
+import "./config/firebase"
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
