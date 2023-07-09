@@ -1,8 +1,7 @@
-import { createUserWithEmailAndPassword, User } from "firebase/auth"
+import { createUserWithEmailAndPassword, getAuth, User } from "firebase/auth"
 
-// TODO: Fix this composable
 export const useFirebaseAuth = () => {
-  const { $firebaseAuth } = useNuxtApp()
+  const auth = getAuth()
 
   const user = useState<User | null>("fb_user", () => null)
 
@@ -12,7 +11,7 @@ export const useFirebaseAuth = () => {
   ): Promise<boolean> => {
     try {
       const userCreds = await createUserWithEmailAndPassword(
-        $firebaseAuth,
+        auth,
         email,
         password
       )
