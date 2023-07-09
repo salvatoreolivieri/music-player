@@ -3,10 +3,9 @@ import { registrationFormSchema as registrationSchema } from "~/config/validatio
 
 const { registerUser } = useFirebaseAuth()
 
+// TODO: This is not working cause api-key error, to fix
 const handleRegistration = async (values: object) => {
-  console.log(values)
-
-  console.log(await registerUser(values.email, values.password))
+  await registerUser(values.email, values.password)
 }
 </script>
 
