@@ -1,8 +1,12 @@
 <script setup lang="ts">
 import { registrationFormSchema as registrationSchema } from "~/config/validation.schema"
 
-const handleRegistration = (value: object) => {
-  console.log(value)
+const { registerUser } = useFirebaseAuth()
+
+const handleRegistration = async (values: object) => {
+  console.log(values)
+
+  console.log(await registerUser(values.email, values.password))
 }
 </script>
 
